@@ -1,0 +1,319 @@
+* {
+    Margin: 0;
+    padding: 0;
+    
+    } 
+    
+        
+    video {
+        min-width: 50%;
+    }
+
+   /*comienzo estilo index*/
+  
+   body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(#3E9D4B, #BFEEA1);
+      
+    
+   }
+.logoBaltho
+{
+    width: 10rem;
+    position:static;
+    }
+
+   #encabezado {  
+    
+    text-align : center;
+    color: blue;
+    
+   }
+@media screen and (max-width: 312px){
+    #encabezado{ display: flex;
+    flex-direction: column;}
+    }
+   
+
+
+#menuNavegacion{
+    
+    
+    background-position : center;
+    background-size: 50%; 
+    text-align-last: center;
+    }
+
+ul, li, a { 
+    display: inline-block;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;  
+}
+/*GRIDS POR ÁREAS*/
+ /*Activar grid y definir las áreas*/
+ #grillaUnica {
+    display: grid ;
+    grid-template-areas: 
+    "section section section"
+    "presentacion presentacion presentacion"
+    "recomendados recomendados aside"
+    "footer footer footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 2fr 1fr 1fr;
+  
+
+    /*Espacio entre columnas*/
+    column-gap: 6px;
+    /*Espacio entre filas*/
+    row-gap: 6px;
+    height: 100vh; 
+    margin: 4px;	
+
+ }
+ 
+    
+    
+ 
+ @media screen and (max-width: 312px) {
+    #grillaUnica {
+   
+    display: flex;
+    flex-direction: column;
+    
+ }}
+
+ 
+ 
+
+ #carrusel {
+    grid-area: section;
+   
+ 
+ } 
+ #carouselExampleIndicators{
+    display: block;
+    width: 80%;
+    margin: auto;
+ }
+
+ #presentacion {
+    grid-area: presentacion;  
+    color: rgb(13, 95, 34); 
+    text-align: center; 
+    line-height: 1.5;  
+ }
+
+ #recomendados {
+    grid-area: recomendados;
+    
+  
+ }
+ /*inicio adaptacion mobile */
+ @media screen and (max-width: 312px) {
+      
+    #recomendados {
+        display: flex;
+       flex-direction: column;
+    }}
+
+    
+
+   
+#recomendados .titulo {
+    text-align: center;
+    }
+#recomendados span {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image:-moz-radial-gradient(circle,#28be85, #770e6e, #6ff020);
+    
+}
+@media screen and (max-width: 312px){
+    #recomendados span {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    .card {  
+        font-size: medium;
+        border-style:solid; color: black;
+        width: 12rem; /* ancho */  
+        
+        padding: 10px;
+        margin: 15px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #recomendados .card__img {
+        border-style: solid;
+        align-content: center;
+        height: 8rem;
+        width: 8rem;
+       
+       
+    }
+    
+    #recomendados .card__nombrePlanta {
+        color: black;
+        font-weight: bold; 
+        text-align: center; 
+        line-height: 1.5;
+        font-size: 20px; 
+    }
+    #recomendados .card__precio {
+        color: black; 
+        font-weight: bold; 
+        text-align : center; 
+        line-height: 1.5;
+        font-size: 20px; 
+        
+    }
+    #recomendados .card__tipoPlanta {
+        color: black; 
+        font-weight: bold;
+        text-align: center; 
+        line-height: 1.5;
+        font-size: 20px;
+       
+    }
+    
+    #recomendados .card__boton {
+        bottom: auto; 
+        line-height: 1.5;
+        font-size: 20px; 
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+    
+
+
+
+ aside {
+    grid-area: aside;
+    display: flex;
+  
+ }
+
+
+ footer {
+    grid-area: footer;
+    display: flex;
+    font-size: medium;
+    border-style: solid;
+    width: 100%; /* ancho */
+   height: viewport-length ; /* alto */ 
+    background-color: #D4F5B8;
+    padding: 1px; 
+
+ }
+ @media screen and (max-width: 312px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }}
+ 
+ /*fin modelo grilla*/
+
+
+    
+
+
+#mapa {
+
+    width: 15rem; /* ancho */
+    height: 15rem; /* alto */ 
+}
+
+.redes {
+    width: 3rem; /* ancho */
+    height: 3rem; /* alto */ 
+}
+
+/*fin estilo index estilo index*/
+
+
+/*comienzo estilo contacto*/
+#formularioDeContacto{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    border-style: solid;
+    width: 500px; /* ancho */
+   height: 600px; /* alto */ 
+    background-color: #96E072;
+    padding: 20px;
+    margin: 20px; 
+}
+/*fin estilo  contacto*/
+
+/*comienzo estilo productos*/
+
+
+#productos h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+#plantasInterior{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.cardProducto{
+    font-size: medium;
+        border-style: solid;
+        width: 12rem; /* ancho */  
+        background-color: #96E072;
+        padding: 10px;
+        margin: 15px; 
+        align-items: center;
+}
+.cardProductoImg{
+    border-style: solid;
+    align-content: center;
+    height: 8rem;
+    width: 8rem;
+}
+
+.card__descripcionPlanta, .card__cuidados, .card__precio {
+    color: black; 
+    font-weight: bold;
+    text-align: center; 
+    line-height: 1.5;
+    font-size: 20px;
+   
+}
+
+.card__boton {
+    bottom: auto; 
+    line-height: 1.5;
+    font-size: 20px; 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/*fin estilo productos*/
+
+/*comienzo estilo quienes somos*/
+h3{ color: black;
+    font-weight: bold; 
+    text-align: center; 
+    font-size: 25px; }
+    
+#proposito{
+    color: black;
+    font-weight: bold; 
+    text-align: center; 
+    line-height: 1.5;
+    font-size: 20px; 
+
+}
+/*fin estilo quienes somos*/
