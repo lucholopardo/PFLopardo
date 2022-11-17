@@ -49,6 +49,7 @@ ul, li, a {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;  
+    text-align: center; 
 }
 /*GRIDS POR ÁREAS*/
  /*Activar grid y definir las áreas*/
@@ -61,7 +62,7 @@ ul, li, a {
     "footer footer footer";
     grid-template-rows: 1fr 1fr 1fr 1fr; 
     grid-template-columns: 2fr 1fr 1fr;
-  
+    border-style:solid; color: black;
 
     /*Espacio entre columnas*/
     column-gap: 6px;
@@ -80,7 +81,7 @@ ul, li, a {
    
     display: flex;
     flex-direction: column;
-    
+    border-style:solid; color: black;
  }}
 
  
@@ -88,7 +89,7 @@ ul, li, a {
 
  #carrusel {
     grid-area: section;
-   
+    border-style:solid; color: black;
  
  } 
  #carouselExampleIndicators{
@@ -96,17 +97,20 @@ ul, li, a {
     width: 80%;
     margin: auto;
  }
-
  #presentacion {
     grid-area: presentacion;  
     color: rgb(13, 95, 34); 
     text-align: center; 
     line-height: 1.5;  
+    border-style:solid; color: black !important;
+ 
  }
 
+ 
  #recomendados {
     grid-area: recomendados;
-    
+    border-style:solid; color: black;
+ 
   
  }
  /*inicio adaptacion mobile */
@@ -115,6 +119,8 @@ ul, li, a {
     #recomendados {
         display: flex;
        flex-direction: column;
+       border-style:solid; color: black;
+ 
     }}
 
     
@@ -139,7 +145,6 @@ ul, li, a {
         font-size: medium;
         border-style:solid; color: black;
         width: 12rem; /* ancho */  
-        
         padding: 10px;
         margin: 15px; 
         display: flex;
