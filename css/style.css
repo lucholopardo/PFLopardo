@@ -4,32 +4,26 @@
     
     } 
     
-        
-    video {
-        min-width: 50%;
-    }
-
    /*comienzo estilo index*/
   
    body {
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(#3E9D4B, #BFEEA1);
-      
-    
-   }
-.logoBaltho
-{
-    width: 10rem;
-    position:static;
+    background-image:linear-gradient(rgb(20, 172, 83),rgb(144, 233, 132));
     }
+   
+   .logoBaltho
+        {
+        width: 10rem;
+        position:static;
+     }
 
    #encabezado {  
     
-    text-align : center;
-    color: blue;
-    
-   }
-@media screen and (max-width: 312px){
+        text-align : center;
+        color: blue;
+        }
+
+    @media screen and (max-width: 312px){
     #encabezado{ display: flex;
     flex-direction: column;}
     }
@@ -37,11 +31,11 @@
 
 
 #menuNavegacion{
-    
-    
     background-position : center;
     background-size: 50%; 
     text-align-last: center;
+    background-image: linear-gradient( #4bdbc3,#3fa04b);
+    margin: 10px;
     }
 
 ul, li, a { 
@@ -51,25 +45,26 @@ ul, li, a {
     font-size: 30px;  
     text-align: center; 
 }
+
+
 /*GRIDS POR ÁREAS*/
  /*Activar grid y definir las áreas*/
  #grillaUnica {
-    display: grid ;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr auto; 
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "section section section"
     "presentacion presentacion presentacion"
     "recomendados recomendados aside"
     "footer footer footer";
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    grid-template-columns: 2fr 1fr 1fr;
-    border-style:solid; color: black;
+   height: 100vh; 
+    margin: 10px;	
 
     /*Espacio entre columnas*/
-    column-gap: 6px;
+    column-gap: 8px;
     /*Espacio entre filas*/
-    row-gap: 6px;
-    height: 100vh; 
-    margin: 4px;	
+    row-gap: 8px;
 
  }
  
@@ -81,7 +76,7 @@ ul, li, a {
    
     display: flex;
     flex-direction: column;
-    border-style:solid; color: black;
+    
  }}
 
  
@@ -89,37 +84,38 @@ ul, li, a {
 
  #carrusel {
     grid-area: section;
-    border-style:solid; color: black;
+    background-image: linear-gradient(to top, #4bdbc3,#3fa04b);
  
  } 
  #carouselExampleIndicators{
     display: block;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
  }
  #presentacion {
     grid-area: presentacion;  
-    color: rgb(13, 95, 34); 
+    color: rgb(15, 17, 16); 
     text-align: center; 
     line-height: 1.5;  
-    border-style:solid; color: black !important;
+    border-style:solid; 
+    background-color: rgb(77, 226, 169);
  
  }
 
  
  #recomendados {
     grid-area: recomendados;
-    border-style:solid; color: black;
- 
-  
+    background-image: linear-gradient(#3fa04b, #4bdbc3);
  }
+
+
  /*inicio adaptacion mobile */
  @media screen and (max-width: 312px) {
       
     #recomendados {
         display: flex;
        flex-direction: column;
-       border-style:solid; color: black;
+       border-style:solid; 
  
     }}
 
@@ -132,7 +128,7 @@ ul, li, a {
 #recomendados span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-image:-moz-radial-gradient(circle,#28be85, #770e6e, #6ff020);
+    
     
 }
 @media screen and (max-width: 312px){
@@ -150,6 +146,12 @@ ul, li, a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-image: linear-gradient( #4bdbc3,#3fa04b);
+        transition: all 2s;
+    }
+    .card:hover {
+        height: 25rem;
+        width: 15rem;
     }
     
     #recomendados .card__img {
@@ -201,43 +203,78 @@ ul, li, a {
  aside {
     grid-area: aside;
     display: flex;
-  
+    background-image: linear-gradient( #4bdbc3,#e2ec80);
  }
 
 
  footer {
     grid-area: footer;
-    display: flex;
-    font-size: medium;
-    border-style: solid;
+    display: flex; 
+    flex-direction: row;
+    
     width: 100%; /* ancho */
    height: viewport-length ; /* alto */ 
-    background-color: #D4F5B8;
-    padding: 1px; 
+   background-image: linear-gradient( #4bdbc3,#3fa04b);
+    padding: 4px; 
 
  }
+
+ #spanfooter {
+    justify-content:center;
+    margin: 4rem;
+    padding: 5rem;
+    width: 25%;
+ }
+ #spanfooter h3 {
+    font-weight: bold; 
+    text-align: center; 
+    line-height: 1.5;
+    font-size: 20px; 
+
+}
+ 
+
+ #mapa{
+    height: 10rem;
+    width: 10rem;
+align-content: center;
+margin-top: 30px;
+margin-left: 10px;
+margin-right: 10px;}
+
+
+.mediosDePago{
+    height: 10rem;
+    width: 10rem;
+    align-content: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;}
+
+#listaContacto .datoContacto {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+        font-weight:100 ; 
+        text-align:left; 
+        line-height: 1.5;
+        font-size: 15px; 
+       
+
+}
+
+
  @media screen and (max-width: 312px){
     footer{
         display: flex;
         flex-direction: column;
     }}
+
+
+
+
  
- /*fin modelo grilla*/
-
-
-    
-
-
-#mapa {
-
-    width: 15rem; /* ancho */
-    height: 15rem; /* alto */ 
-}
-
-.redes {
-    width: 3rem; /* ancho */
-    height: 3rem; /* alto */ 
-}
+/*fin modelo grilla*/
 
 /*fin estilo index estilo index*/
 
@@ -253,7 +290,19 @@ ul, li, a {
     background-color: #96E072;
     padding: 20px;
     margin: 20px; 
+    background-image: linear-gradient( #4bdbc3,#3fa04b);
 }
+
+ #nombre:focus {
+        width: 800px;
+    }
+    #email:focus {
+        width: 800px;
+    }
+    #mensaje:focus {
+        width: 800px;
+    }
+
 /*fin estilo  contacto*/
 
 /*comienzo estilo productos*/
@@ -266,7 +315,7 @@ ul, li, a {
     font-size: 50px;
 }
 
-#plantasInterior{
+#plantasInterior {
     display: flex;
     flex-wrap: wrap; 
 }
@@ -279,13 +328,20 @@ ul, li, a {
         padding: 10px;
         margin: 15px; 
         align-items: center;
+        background-image: linear-gradient( #4bdbc3,#3fa04b);
+        transition: all 2s;
 }
-.cardProductoImg{
+.cardProducto:hover {
+    height: 25rem;
+    width: 15rem;
+}
+.cardProductoImg {
     border-style: solid;
-    align-content: center;
     height: 8rem;
     width: 8rem;
-}
+    align-content: center;
+   justify-content: center;
+}  
 
 .card__descripcionPlanta, .card__cuidados, .card__precio {
     color: black; 
@@ -319,6 +375,10 @@ h3{ color: black;
     text-align: center; 
     line-height: 1.5;
     font-size: 20px; 
-
 }
+.fotoPresentacion{
+    height: 60%;
+    width: 100%;
+}
+
 /*fin estilo quienes somos*/
