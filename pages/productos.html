@@ -11,23 +11,39 @@
     <title>BALTHO TIENDA DE PLANTAS</title>
     <link rel="shortcut icon" href="../img/favicom.jpg">
 </head>
-<body>
+  <body>
     <header id="encabezado">
-        <img class="logoBaltho" src="../img/favicom.jpg" alt="logo baltho" > <!--logo de la marca-->
-        <h1> BALTHO TIENDA DE PLANTAS</h1>
-        <div> <!--carrito de compra--></div>
-     </header>
+        <h1 class="fw-bolder wow animate__animated animate__heartBeat nombreEncabezado"> BALTHO TIENDA DE PLANTAS</h1>
+    </header>
 
-    <nav id= "menuNavegacion">  <!--botones de navegacion, lista desordenada-->
-            <ul class="lista">
-                <li ><a href="../index.html">INICIO</a></li>
-                <li><a href="quienesSomos.html">QUIENES SOMOS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="envios.html">ENVIOS Y FORMA DE PAGO</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li> 
-
-            </ul>
-    </nav>
+     <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+         <a class="navbar-brand" href="../index.html"> <img class="logoBaltho" src="../img/favicom.jpg" alt="logo baltho" > <!--logo de la marca--></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="../pages/quienesSomos.html">QUIENES SOMOS</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../pages/envios.html">ENVIOS Y FORMAS DE PAGO</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+             </li>
+           </ul>
+           <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+           </form>
+         </div>
+       </div>
+     </nav>
   
     <section id="productos">
       <h2 class="animate__heartBeat">PLANTAS DE INTERIOR </h2>

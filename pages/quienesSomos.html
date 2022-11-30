@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@700 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="shortcut icon" href="../img/favicom.jpg">
 <!--insertar favicom-->
@@ -13,23 +14,39 @@
 </head>
 <body>
     <header id="encabezado">
-        <img class="logoBaltho" src="../img/favicom.jpg" alt="logo baltho" > <!--logo de la marca-->
-        <h1> BALTHO TIENDA DE PLANTAS</h1>
-        <div> <!--carrito de compra--></div>
-     </header>
-
-    <nav id= "menuNavegacion">  <!--botones de navegacion, lista desordenada-->
-            <ul class="lista">
-                <li ><a href="../index.html">INICIO</a></li>
-                <li><a href="quienesSomos.html">QUIENES SOMOS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="envios.html">ENVIOS Y FORMA DE PAGO</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li> 
-
-            </ul>
-    </nav>
+     <h1 class="fw-bolder wow animate__animated animate__heartBeat nombreEncabezado"> BALTHO TIENDA DE PLANTAS</h1>
+    </header>
+     <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+         <a class="navbar-brand" href="../index.html"> <img class="logoBaltho" src="../img/favicom.jpg" alt="logo baltho" > <!--logo de la marca--></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="../pages/quienesSomos.html">QUIENES SOMOS</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../pages/envios.html">ENVIOS Y FORMAS DE PAGO</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+             </li>
+           </ul>
+           <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+           </form>
+         </div>
+       </div>
+     </nav>
+  
         <section id="proposito">
-            <h3>queremos llenar tu vida de verde  </h3>
+            <h3>QUEREMOS LLENAR TU VIDA DE VERDE </h3>
                 <p>
 
 
@@ -43,7 +60,7 @@
                     </p>
                     
                 <p>
-                    En Baltho creemos en el valor de la Jardinería, el Paisajismo y el disfrute del tiempo libre rodeados de naturaleza, por eso día a día trabajamos para mejorar la experiencia de “habitar un espacio” rodeados de verde.
+                  EN BALTHO CREEMOS EN EL VALOR DE LA JARDINERÍA, EL PAISAJISMO Y EL DISFRUTE DEL TIEMPO LIBRE RODEADOS DE NATURALEZA, POR ESO DÍA A DÍA TRABAJAMOS PARA MEJORAR LA EXPERIENCIA DE “HABITAR UN ESPACIO” RODEADOS DE VERDE.
                 </p>
 
                 <img class="fotoPresentacion" src="../img/vivero5.jpg" alt="vivero"> <!--agregar imagen de trabajos en el vivero-->
@@ -84,6 +101,8 @@
                     </span>
                 
               </footer>  
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>             
-    </body>
-    </html>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>             
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+       <script>  new WOW().init(); </script>
+  </body>
+</html>
