@@ -1,0 +1,95 @@
+* {
+    Margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(rgb(20, 172, 83), rgb(144, 233, 132));
+  }
+  
+  .logoBaltho {
+    width: 10rem;
+    position: static;
+  }
+  
+  #encabezado {
+    text-align: center;
+    color: rgb(17, 59, 13);
+  }
+  
+ 
+
+  .navbar {
+    background-image: linear-gradient(to top, #4bdbc3, #3fa04b);
+    font-size: 20px;
+    color: rgb(17, 59, 13);
+  
+  .form-control {
+    background-image: linear-gradient(to top, #4bdbc3, #3fa04b);
+  }}
+
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* ancho */
+    height: viewport-length; /* alto */
+    background-image: linear-gradient(#4bdbc3, #3fa04b);
+    padding: 4px;
+  
+  
+  #spanfooter {
+    justify-content: center;
+    align-content: center;
+    margin: 4rem;
+    padding: 5rem;
+    width: 100%;
+  }
+  
+  #spanfooter h3 {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  
+  #mapa {
+    height: 10rem;
+    width: 10rem;
+    align-content: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .mediosDePago {
+    height: 10rem;
+    width: 10rem;
+    align-content: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+ #listadecontacto .datoContacto {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 15px;
+  } }
+  @media screen and (max-width: 312px) {
+    #encabezado {
+       @include flex-centrado; }
+    footer {
+     @include flex-centrado;
+    }} 
+     
+  
