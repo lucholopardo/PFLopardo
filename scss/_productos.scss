@@ -1,0 +1,57 @@
+/*comienzo estilo productos*/
+
+
+#productos h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+#plantasInterior {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.cardProducto{
+    font-size: medium;
+        border-style: solid;
+        width: 12rem; /* ancho */  
+        background-color: #96E072;
+        padding: 10px;
+        margin: 15px; 
+        align-items: center;
+        background-image: linear-gradient( #4bdbc3,#3fa04b);
+        transition: all 2s;
+}
+.cardProducto:hover {
+    height: 25rem;
+    width: 15rem;
+}
+.cardProductoImg {
+    border-style: solid;
+    height: 8rem;
+    width: 8rem;
+    align-content: center;
+   justify-content: center;
+}  
+
+.card__descripcionPlanta, .card__cuidados, .card__precio {
+    color: black; 
+    font-weight: bold;
+    text-align: center; 
+    line-height: 1.5;
+    font-size: 20px;
+   
+}
+
+.card__boton {
+    bottom: auto; 
+    line-height: 1.5;
+    font-size: 20px; 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/*fin estilo productos*/

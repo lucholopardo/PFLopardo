@@ -1,0 +1,25 @@
+/*comienzo estilo contacto*/
+#formularioDeContacto{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    border-style: solid;
+    width: 500px; /* ancho */
+   height: 600px; /* alto */ 
+    background-color: #96E072;
+    padding: 20px;
+    margin: 20px; 
+    background-image: linear-gradient( #4bdbc3,#3fa04b);
+
+
+ #nombre:focus {
+        width: 800px;
+    }
+    #email:focus {
+        width: 800px;
+    }
+    #mensaje:focus {
+        width: 800px;
+    }
+}
+/*fin estilo  contacto*/
