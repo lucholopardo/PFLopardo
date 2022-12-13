@@ -134,8 +134,8 @@ footer #listadecontacto .datoContacto {
   text-align: center;
 }
 #recomendados span {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 #recomendados .card__img {
   border-style: solid;
@@ -197,6 +197,23 @@ aside {
 }
 
 /*inicio adaptacion mobile */
+@media screen and (max-width: 500px) {
+  #grillaUnica {
+    display: flex;
+    flex-direction: column;
+  }
+  #recomendados {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-style: solid;
+  }
+  #recomendados span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 312px) {
   #grillaUnica {
     display: flex;

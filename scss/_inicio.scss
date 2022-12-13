@@ -46,8 +46,9 @@
     text-align: center;
   }
    span {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+   
   }
     .card__img {
         border-style: solid;
@@ -115,6 +116,22 @@
   
  
   /*inicio adaptacion mobile */
+  @media screen and (max-width: 500px) {
+    #grillaUnica {
+      display: flex;
+      flex-direction: column;
+    }
+ 
+    #recomendados {
+      @include flex-centrado;
+      border-style: solid;
+    } 
+  
+    #recomendados span {
+     @include flex-centrado; 
+    }
+  }
+
   @media screen and (max-width: 312px) {
     #grillaUnica {
       display: flex;
